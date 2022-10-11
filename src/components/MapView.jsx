@@ -8,7 +8,7 @@ const MapView = () => {
   useEffect(() => {
     $.ajax({
       type: "GET",
-      url: "http://localhost:8080/https://giscopade.neuquen.gov.ar/geoserver/wms?request=getCapabilities",
+      url: "https://giscopade.neuquen.gov.ar/geoserver/wms?request=getCapabilities",
       dataType: "xml",
       success: (xml) => {
         console.log(xml);
